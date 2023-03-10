@@ -61,4 +61,13 @@
         android:padding="10dp"
         android:text="Encapusalation in Java" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="More Info" />
+
 </LinearLayout>
