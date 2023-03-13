@@ -16,25 +16,8 @@
         app:hintTextColor="@color/yellow"
         android:layout_gravity="center"
         android:layout_marginTop="280dp"
-        android:id="@+id/etEmail"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/yellow"
-            android:textStyle="normal"
-            android:hint="Enter Email" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        app:boxStrokeColor="@color/yellow"
-        app:hintTextColor="@color/yellow"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
         android:id="@+id/etName"
+        app:startIconDrawable="@drawable/baseline_person_24"
         >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -45,6 +28,25 @@
             android:hint="Enter Name" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/yellow"
+        app:hintTextColor="@color/yellow"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/etEmail"
+        app:startIconDrawable="@drawable/baseline_drive_file_rename_outline_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:textStyle="normal"
+            android:hint="Enter Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -53,6 +55,8 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:id="@+id/etPassword"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/baseline_lock_24"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -72,6 +76,7 @@
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:id="@+id/etUniqueId"
+        app:startIconDrawable="@drawable/baseline_verified_user_24"
         >
 
         <com.google.android.material.textfield.TextInputEditText
