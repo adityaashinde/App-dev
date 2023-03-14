@@ -21,13 +21,13 @@ class MainActivity : AppCompatActivity() {
         val etName = findViewById<TextInputEditText>(R.id.etName)
         val etEmail = findViewById<TextInputEditText>(R.id.etEmail)
         val etPassword = findViewById<TextInputEditText>(R.id.etPassword)
-        val etUniqueId = findViewById<TextInputEditText>(R.id.etUniqueId)
+        val etMobileNo = findViewById<TextInputEditText>(R.id.etMobileNo)
 
         signInButton.setOnClickListener {
 
             val name = etName.text.toString()
             val mail = etEmail.text.toString()
-            val uniqueId = etUniqueId.text.toString()
+            val uniqueId = etMobileNo.text.toString()
             val password = etPassword.text.toString()
 
 
@@ -35,6 +35,11 @@ class MainActivity : AppCompatActivity() {
             database = FirebaseDatabase.getInstance().getReference("Users")
 
             database.child(uniqueId).setValue(users).addOnSuccessListener {
+
+                etName.text?.clear()
+                etEmail.text?.clear()
+                etPassword.text?.clear()
+                etMobileNo.text?.clear()
 
                 Toast.makeText(this, "User Registered", Toast.LENGTH_SHORT).show()
             }.addOnSuccessListener {

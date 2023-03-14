@@ -15,7 +15,7 @@
         app:boxStrokeColor="@color/yellow"
         app:hintTextColor="@color/yellow"
         android:layout_gravity="center"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="300dp"
         app:startIconDrawable="@drawable/baseline_person_24"
         >
 
@@ -83,8 +83,8 @@
             android:layout_height="wrap_content"
             android:textColor="@color/yellow"
             android:textStyle="normal"
-            android:id="@+id/etUniqueId"
-            android:hint="Enter Unique Id" />
+            android:id="@+id/etMobileNo"
+            android:hint="Enter Mobile No" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
