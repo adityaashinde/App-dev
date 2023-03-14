@@ -23,12 +23,15 @@ class MainActivity : AppCompatActivity() {
 
         signInButton.setOnClickListener {
 
-            val name = etName.text
-            val mail = etEmail.text
-            val uniqueId = etUniqueId.text
-            val password = etPassword.text
+            val name = etName.text.toString()
+            val mail = etEmail.text.toString()
+            val uniqueId = etUniqueId.text.toString()
+            val password = etPassword.text.toString()
 
+
+            val users = Users(name, mail, password, uniqueId)
             database = FirebaseDatabase.getInstance().getReference("Users")
+            database.child(uniqueId).setValue(users)
         }
 
     }
