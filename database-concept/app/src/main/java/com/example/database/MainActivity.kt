@@ -6,6 +6,7 @@ import android.webkit.WebViewDatabase
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -17,10 +18,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val signInButton = findViewById<Button>(R.id.btnSignUp)
-        val etName = findViewById<EditText>(R.id.etName)
-        val etEmail = findViewById<EditText>(R.id.etEmail)
-        val etPassword = findViewById<EditText>(R.id.etPassword)
-        val etUniqueId = findViewById<EditText>(R.id.etUniqueId)
+        val etName = findViewById<TextInputEditText>(R.id.etName)
+        val etEmail = findViewById<TextInputEditText>(R.id.etEmail)
+        val etPassword = findViewById<TextInputEditText>(R.id.etPassword)
+        val etUniqueId = findViewById<TextInputEditText>(R.id.etUniqueId)
 
         signInButton.setOnClickListener {
 
@@ -36,6 +37,9 @@ class MainActivity : AppCompatActivity() {
             database.child(uniqueId).setValue(users).addOnSuccessListener {
 
                 Toast.makeText(this, "User Registered", Toast.LENGTH_SHORT).show()
+            }.addOnSuccessListener {
+                Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
+
             }
         }
 
