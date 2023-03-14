@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.webkit.WebViewDatabase
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -31,7 +32,11 @@ class MainActivity : AppCompatActivity() {
 
             val users = Users(name, mail, password, uniqueId)
             database = FirebaseDatabase.getInstance().getReference("Users")
-            database.child(uniqueId).setValue(users)
+
+            database.child(uniqueId).setValue(users).addOnSuccessListener {
+
+                Toast.makeText(this, "User Registered", Toast.LENGTH_SHORT).show()
+            }
         }
 
     }
