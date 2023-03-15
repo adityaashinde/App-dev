@@ -78,8 +78,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="16dp"
         android:gravity="center"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
         android:orientation="horizontal">
 
 
@@ -87,10 +88,9 @@
             android:id="@+id/btnGoogle"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:drawableLeft="@drawable/ic_google"
             android:padding="10dp"
+            android:layout_margin="8dp"
             android:text="Google"
             android:textAllCaps="false"
             android:textColor="@color/black"
@@ -102,8 +102,6 @@
             android:id="@+id/btnFacebook"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
             android:drawableLeft="@drawable/ic_facebook"
             android:padding="10dp"
             android:text="Facebook"
