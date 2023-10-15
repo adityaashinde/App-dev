@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.face_detection_using_ml"
-    compileSdk = 33
+    namespace = "com.example.facedetection"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.face_detection_using_ml"
+        applicationId = "com.example.facedetection"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -52,8 +52,8 @@ android {
 dependencies {
 
     implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
-    implementation("androidx.activity:activity-compose:1.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation("androidx.activity:activity-compose:1.8.0")
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")

@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Face-Detection-Using-ML"
+rootProject.name = "Face Detection"
 include(":app")

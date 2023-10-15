@@ -1,4 +1,4 @@
-package com.example.face_detection_using_ml
+package com.example.facedetection
 
 import org.junit.Test
 
