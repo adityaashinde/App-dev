@@ -5,21 +5,29 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/face3"
+
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
+   <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:src="@drawable/face1" />
+        android:layout_gravity="center"
+        android:layout_marginTop="54dp"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:text="Face Detection Using ML in Android App" />
 
     <Button
         android:id="@+id/btnCamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:padding="25dp"
-        android:layout_marginTop="50dp"
-        android:text="Face Detection" />
+        android:layout_marginTop="500dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:padding="18dp"
+        android:text="Detect the Face" />
+
 </LinearLayout>

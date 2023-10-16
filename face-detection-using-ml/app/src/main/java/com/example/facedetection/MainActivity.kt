@@ -1,5 +1,6 @@
 package com.example.facedetection
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Bitmap
 import android.os.Bundle
@@ -25,6 +26,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         var buttonCamera = findViewById<Button>(R.id.btnCamera)
 
@@ -55,6 +57,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    @SuppressLint("SuspiciousIndentation")
     private fun detectFace(bitmap: Bitmap?) {
 
         // High-accuracy landmark detection and face classification
